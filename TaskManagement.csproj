@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IgniteUI.Blazor" Version="21.2.1-alpha" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Shared/IAmTheMasterView.razor.css" CssScope="i-am-the-master-view-scope" />
+    <None Update="Pages/I am the Master view/ListView.razor.css" CssScope="list-view-scope" />
+    <None Update="Pages/I am the Master view/KanbanBoard.razor.css" CssScope="kanban-board-scope" />
+    <None Update="Pages/SearchBar.razor.css" CssScope="search-bar-scope" />
+  </ItemGroup>
+
+</Project>

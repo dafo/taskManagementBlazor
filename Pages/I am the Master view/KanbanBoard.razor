@@ -1,0 +1,206 @@
+@page "/"
+@inject NavigationManager NavigationManager
+
+<div class="kanban-board-container row">
+    <div class="group row">
+        <div class="group_1 column">
+            <h6 class="h6">To do</h6>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="GA" Shape="AvatarShape.Circle" class="avatar_2" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Create brand guideline</h3>
+                    <h5 slot="subtitle">Deadline: Nov 19, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" kanban-board-scope>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">attach_file</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">comment</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">share</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </IgbCardActions>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <h3 slot="title">Preview app</h3>
+                    <h5 slot="subtitle">Deadline: Nov 21, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardMedia>
+                    <img src="https://i.ibb.co/nMYxSTR/chris-ried-ieic5-Tq8-YMk-unsplash.jpg" />
+                </IgbCardMedia>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="IK" Shape="AvatarShape.Circle" class="avatar_1" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Indigo Cloud integration</h3>
+                    <h5 slot="subtitle">Deadline: Nov 28, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" kanban-board-scope>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">short_text</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">comment</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">share</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </IgbCardActions>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="SB" Shape="AvatarShape.Circle" class="avatar_3" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Input update</h3>
+                    <h5 slot="subtitle">Deadline: Nov 21, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardMedia>
+                    <img src="https://i.ibb.co/RTnwDCL/yancy-min-842of-HC6-Ma-I-unsplash.jpg&quot; alt=&quot;yancy-min-842of-HC6-Ma-I-unsplash&quot;" />
+                </IgbCardMedia>
+            </IgbCard>
+        </div>
+        <div class="group_1 column">
+            <h6 class="h6">In Development</h6>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="SB" Shape="AvatarShape.Circle" class="avatar_3" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Preview app</h3>
+                    <h5 slot="subtitle">Deadline: Nov 21, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardMedia>
+                    <img src="https://i.ibb.co/tsyHc75/shahadat-rahman-gny-A8vd3-Otc-unsplash.jpg" />
+                </IgbCardMedia>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="VB" Shape="AvatarShape.Circle" class="avatar_2" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Data binding grid</h3>
+                    <h5 slot="subtitle">Deadline: Nov 29, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" kanban-board-scope>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">attach_file</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">comment</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">share</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </IgbCardActions>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="IK" Shape="AvatarShape.Circle" class="avatar_1" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Copy-Paste update</h3>
+                    <h5 slot="subtitle">Deadline: Nov 11, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" kanban-board-scope>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">short_text</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">comment</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">share</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </IgbCardActions>
+            </IgbCard>
+        </div>
+        <div class="group_1 column">
+            <h6 class="h6">Validation</h6>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="CP" Shape="AvatarShape.Circle" class="avatar_3" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Update samples</h3>
+                    <h5 slot="subtitle">Deadline: Nov 12, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardMedia>
+                    <img src="https://i.ibb.co/4tz9vpC/markus-spiske-qjn-An-F0j-IGk-unsplash.jpg" />
+                </IgbCardMedia>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="AS" Shape="AvatarShape.Circle" class="avatar" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">App library</h3>
+                    <h5 slot="subtitle">Deadline: Nov 10, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardMedia>
+                    <img src="https://i.ibb.co/PrdbVWH/roozbeh-eslami-Yl-Vjr-Bkf-Xt8-unsplash.jpg" />
+                </IgbCardMedia>
+            </IgbCard>
+        </div>
+        <div class="group_1 column">
+            <h6 class="h6">Done</h6>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="GA" Shape="AvatarShape.Circle" class="avatar_2" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Onboarding experience</h3>
+                    <h5 slot="subtitle">Deadline: Nov 4, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" kanban-board-scope>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">attach_file</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">comment</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">share</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </IgbCardActions>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" kanban-board-scope>
+                <IgbCardHeader>
+                    <div slot="thumbnail">
+                        <IgbAvatar Initials="SA" Shape="AvatarShape.Circle" class="avatar_3" kanban-board-scope></IgbAvatar>
+                    </div>
+                    <h3 slot="title">Sketch Parser</h3>
+                    <h5 slot="subtitle">Deadline: Nov 5, 2020</h5>
+                </IgbCardHeader>
+                <IgbCardMedia>
+                    <img src="https://i.ibb.co/nMYxSTR/chris-ried-ieic5-Tq8-YMk-unsplash.jpg" />
+                </IgbCardMedia>
+            </IgbCard>
+        </div>
+    </div>
+</div>
+
+@code {
+}

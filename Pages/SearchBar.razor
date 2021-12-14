@@ -1,0 +1,89 @@
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="search-bar-container column">
+    <IgbNavbar class="navbar" search-bar-scope>
+        <div slot="end">
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">notifications</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">email</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">account_circle</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">more_vert</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+        <div>My Kanban App</div>
+    </IgbNavbar>
+    <div class="group_3 row">
+        <div class="group column">
+            <IgbAvatar Initials="HA" class="avatar" search-bar-scope></IgbAvatar>
+            <IgbAvatar Initials="BR" class="avatar_3" search-bar-scope></IgbAvatar>
+            <IgbAvatar Initials="LT" class="avatar_3" search-bar-scope></IgbAvatar>
+            <IgbAvatar Initials="WP" class="avatar_3" search-bar-scope></IgbAvatar>
+        </div>
+        <div class="group_3 column">
+            <div class="group_1 row">
+                <div class="group_5 row">
+                    <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Navigate("/"))">
+                        <span class="material-icons">search</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <h5 class="h5">Fintech Project</h5>
+                </div>
+                <div class="group_5 row">
+                    <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Navigate("/list-view"))" class="button_1" search-bar-scope>
+                        <span class="material-icons">list</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Navigate("/"))" class="button_1" search-bar-scope>
+                        <span class="material-icons">dashboard</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </div>
+                <div class="group_5 row">
+                    <p class="typography__subtitle-1 text">Project Members</p>
+                    <IgbAvatar Initials="YT" Shape="AvatarShape.Circle" class="avatar_1" search-bar-scope></IgbAvatar>
+                    <IgbAvatar Initials="BR" Shape="AvatarShape.Circle" class="avatar_2" search-bar-scope></IgbAvatar>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">add</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </div>
+            </div>
+            <div class="group_2 row">
+                <div class="group_4 row">
+                    <p class="typography__body-1 text_1">Select boards to search</p>
+                    <IgbCheckbox class="checkbox" search-bar-scope>All</IgbCheckbox>
+                    <IgbCheckbox class="checkbox" search-bar-scope>Active</IgbCheckbox>
+                    <IgbCheckbox class="checkbox" search-bar-scope>Archived</IgbCheckbox>
+                    <IgbInput DisplayType="InputType.Text" Label="Label/Placeholder" Outlined="true" class="input" search-bar-scope>
+                        <span slot="prefix">
+                            <span class="material-icons icon">search</span>
+                        </span>
+                    </IgbInput>
+                </div>
+                <IgbButton Variant="ButtonVariant.Contained" class="button" search-bar-scope>
+                    Search now
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+            <div class="view-container">@Body</div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

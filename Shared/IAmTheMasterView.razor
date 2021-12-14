@@ -1,0 +1,72 @@
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="i-am-the-master-view-container column">
+    <IgbNavbar class="navbar" i-am-the-master-view-scope>
+        <div slot="end">
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">notifications</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">email</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">account_circle</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">more_vert</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+        <div>My Kanban App</div>
+    </IgbNavbar>
+    <div class="group_2 row">
+        <div class="group column">
+            <IgbAvatar Initials="HA" class="avatar" i-am-the-master-view-scope></IgbAvatar>
+            <IgbAvatar Initials="BR" class="avatar_3" i-am-the-master-view-scope></IgbAvatar>
+            <IgbAvatar Initials="LT" class="avatar_3" i-am-the-master-view-scope></IgbAvatar>
+            <IgbAvatar Initials="WP" class="avatar_3" i-am-the-master-view-scope></IgbAvatar>
+        </div>
+        <div class="group_2 column">
+            <div class="group_1 row">
+                <div class="group_3 row">
+                    <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Navigate("/search-bar"))">
+                        <span class="material-icons">search</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <h5 class="h5">Fintech Project</h5>
+                </div>
+                <div class="group_3 row">
+                    <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Navigate("/list-view"))" class="button" i-am-the-master-view-scope>
+                        <span class="material-icons">list</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Navigate("/"))" class="button" i-am-the-master-view-scope>
+                        <span class="material-icons">dashboard</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </div>
+                <div class="group_3 row">
+                    <p class="typography__subtitle-1 text">Project Members</p>
+                    <IgbAvatar Initials="YT" Shape="AvatarShape.Circle" class="avatar_1" i-am-the-master-view-scope></IgbAvatar>
+                    <IgbAvatar Initials="BR" Shape="AvatarShape.Circle" class="avatar_2" i-am-the-master-view-scope></IgbAvatar>
+                    <IgbButton Variant="ButtonVariant.Flat">
+                        <span class="material-icons">add</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </div>
+            </div>
+            <div class="view-container">@Body</div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

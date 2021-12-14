@@ -1,0 +1,96 @@
+@page "/list-view"
+@inject NavigationManager NavigationManager
+
+<div class="list-view-container row">
+    <div class="group row">
+        <div class="group_1 column">
+            <h6 class="h6">To do</h6>
+            <IgbList class="list" list-view-scope>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Preview app</div>
+                </IgbListItem>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="IK" Shape="AvatarShape.Circle" class="avatar_2" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Indigo Cloud integration</div>
+                </IgbListItem>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="GA" Shape="AvatarShape.Circle" class="avatar_3" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Create brand guideline</div>
+                </IgbListItem>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="SB" Shape="AvatarShape.Circle" class="avatar_4" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Input update</div>
+                </IgbListItem>
+            </IgbList>
+        </div>
+        <div class="group_1 column">
+            <h6 class="h6">In Development</h6>
+            <IgbList class="list" list-view-scope>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="S" Shape="AvatarShape.Circle" class="avatar_4" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Preview app</div>
+                </IgbListItem>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="VB" Shape="AvatarShape.Circle" class="avatar_3" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Data binding grid</div>
+                </IgbListItem>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="IK" Shape="AvatarShape.Circle" class="avatar_2" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Copy-Paste update</div>
+                </IgbListItem>
+            </IgbList>
+        </div>
+        <div class="group_1 column">
+            <h6 class="h6">Validation</h6>
+            <IgbList class="list" list-view-scope>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="CP" Shape="AvatarShape.Circle" class="avatar_4" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">App library</div>
+                </IgbListItem>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="AS" Shape="AvatarShape.Circle" class="avatar_1" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Update samples</div>
+                </IgbListItem>
+            </IgbList>
+        </div>
+        <div class="group_1 column">
+            <h6 class="h6">Done</h6>
+            <IgbList class="list" list-view-scope>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="GA" Shape="AvatarShape.Circle" class="avatar_3" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Sketch Parser</div>
+                </IgbListItem>
+                <IgbListItem class="list-item" list-view-scope>
+                    <div slot="start">
+                        <IgbAvatar Initials="SA" Shape="AvatarShape.Circle" class="avatar_4" list-view-scope></IgbAvatar>
+                    </div>
+                    <div slot="title">Onboarding experience</div>
+                </IgbListItem>
+            </IgbList>
+        </div>
+    </div>
+</div>
+
+@code {
+}

@@ -1,0 +1,61 @@
+.kanban-board-container {
+    height: 100%;
+    align-items: stretch;
+}
+.group {
+    padding: 8px;
+    flex-grow: 1;
+    align-items: stretch;
+    position: relative;
+    min-height: 50px;
+    min-width: 50px;
+}
+.group_1 {
+    align-items: center;
+    padding: 4px;
+    margin: 4px;
+    flex-shrink: 0;
+    background-color: hsla(var(--igc-gray-300));
+    position: relative;
+    min-height: 50px;
+    height: max-content;
+    min-width: 50px;
+}
+.h6 {
+    min-width: min-content;
+    margin: 8px;
+    height: max-content;
+}
+.actions-content {
+    min-height: 40px;
+    min-width: 50px;
+}
+.card {
+    margin: 8px;
+    width: 320px;
+    height: max-content;
+    min-width: 320px;
+}
+.avatar::part(base) {
+    background-color: hsla(var(--igc-secondary-900));
+    color: hsla(var(--igc-primary-900));
+}
+.avatar_1::part(base) {
+    background-color: hsla(var(--igc-success-500));
+    color: hsla(var(--igc-gray-900));
+}
+.avatar_2::part(base) {
+    background-color: hsla(var(--igc-primary-500));
+    color: hsla(var(--igc-gray-900));
+}
+.avatar_3::part(base) {
+    background-color: hsla(var(--igc-gray-900));
+    color: hsla(var(--igc-primary-900));
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
